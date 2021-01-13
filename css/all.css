@@ -1,3 +1,130 @@
-.txt{
-    border: 2px solid;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body{
+    background: #fafafa;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+a {
+    text-decoration: none;
+    transition: color 600ms ease;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+header{
+    width: 90%;
+    padding: 20px 5%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > .logo{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+header >.nav{
+    position: relative;
+    left: -50px;
+}
+
+header >.nav a{
+    margin: 0 15px;
+    display: inline-block;
+    color: #a3a3a3;
+}
+
+header >.nav a:hover,
+header >.menu:hover {
+    color: #4e4e4e;
+}
+
+header >.menu{
+    cursor: pointer;
+    color: #a3a3a3;
+    font-size: 23px;
+
+}
+
+.full-page{
+    height: 95vh;
+    background: url('../img/1.webp') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #3b3b3b;
+    text-align: center;
+    color: #fff;
+
+}
+
+.full-page h1{
+    padding-top: 250px;
+    font-size: 45px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.full-page h3{
+    margin: 20px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.full-page button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    cursor: pointer;
+    background: #ffc107;
+    color: #704404;
+    font-weight: 500;
+}
+.full-page button:hover{
+    background: #ff9800;
+
+}
+.full-page button i{
+    margin-left: 5px;
+    transition: margin 600ms ease;
+}
+.full-page button:hover i {
+    margin-left: 15px;
+    color: #fff;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 20%;
+}
+.features > div {
+    width: 300px;
+    text-align: center;
+    margin: 50px 10px;
+}
+.features > div img{
+    width: 80px;
+    margin-bottom: 10px;
+
 }
