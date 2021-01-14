@@ -63,8 +63,59 @@ header >.menu{
     font-size: 23px;
 
 }
+.fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid silver;
+}
 
-.full-page{
+#hidden-menu{
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    background: #fff;
+    z-index: 10;
+    text-align: center;
+}
+
+#hidden-menu .close{
+    font-size: 40px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 600ms ease;
+}
+
+#hidden-menu .close:hover{
+    color: silver;
+}
+
+#hidden-menu h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#hidden-menu ul{
+    list-style: none;
+}
+#hidden-menu ul li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#hidden-menu ul li a{
+    color: #333;
+}
+#hidden-menu ul li a:hover{
+    color: #ccc;
+}
+
+.full-page,
+.bg-fixed{
     height: 95vh;
     background: url('../img/1.webp') no-repeat center center;
     background-attachment: fixed;
@@ -89,7 +140,8 @@ header >.menu{
     text-transform: uppercase;
     font-weight: 500;
 }
-.full-page button{
+.full-page button,
+.bg-fixed button {
     padding: 15px 25px;
     border-radius: 5px;
     border: 0;
@@ -99,15 +151,18 @@ header >.menu{
     color: #704404;
     font-weight: 500;
 }
-.full-page button:hover{
+.full-page button:hover,
+.bg-fixed button:hover{
     background: #ff9800;
 
 }
-.full-page button i{
+.full-page button i,
+.bg-fixed button i{
     margin-left: 5px;
     transition: margin 600ms ease;
 }
-.full-page button:hover i {
+.full-page button:hover i,
+.bg-fixed button:hover i {
     margin-left: 15px;
     color: #fff;
 }
@@ -127,4 +182,54 @@ header >.menu{
     width: 80px;
     margin-bottom: 10px;
 
+}
+.features > div p{
+    font-weight: 200;
+}
+.bg-fixed{
+    height: 300px;
+    
+}
+.bg-fixed h3{
+    font-size: 25px;
+    padding-top: 130px;
+    margin-bottom: 20px;
+}
+.bg-fixed input{
+    padding: 14px 20px;
+    width: 300px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+    background: #fafafa;
+}
+footer{
+    width: 90%;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer .up-btn,
+footer .social div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #eee;
+    cursor: pointer;
+    border: 1px solid silver;
+    color: #3b3b3b;
+    transition: transform 600ms ease;
+}
+footer .up-btn:hover,
+footer .social div:hover{
+    transform:  translateY(-10px);
+
+}
+footer .social div{
+    display: inline-block;
+    margin-left: 15px;
 }
